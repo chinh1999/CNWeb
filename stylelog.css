@@ -1,0 +1,64 @@
+html,body{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 16px;
+    background-color: lightblue;
+    display: block;
+}
+
+.box{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 400px;
+    padding: 40px;
+    text-align: center;
+    overflow: hidden;
+    border-radius: 15px;
+    background-color: rgb(100, 103, 103);
+    transform: translate(-50%, -50%);
+    box-shadow: 0 15px 25px rgba(0, 0, 0, 0.9);
+    height: 380px;
+    max-height: 380px;
+}
+
+.box h1{
+    color: white;
+    font-size: 40px;
+    text-align: center;
+    padding: 5px 0;
+    border-bottom: 7px solid yellow;
+    margin: 0 60px 40px;
+}
+
+.box .section .form-control{
+    background-color: white;
+    border: 1px solid yellow;
+    color: black;
+    margin: 25px auto;
+    max-width: 300px;
+    width: 260px;
+    transition: 0.4s;
+    
+}
+.box .section .form-control:focus{
+    background-color: #646767;
+    border: 1px solid yellow;
+    color: white;
+    width: 300px;
+}
+.box .btn{
+    color: white;
+    background-color: #646767;
+    border: 1px solid yellow;
+    width: 105px;
+    transition: 0.4s;
+    margin-top: 20px;
+    height: 40px;
+}
+.box .btn:hover, .box .btn:focus{
+    color: white;
+    background-color: #464747;
+    border: 1px solid yellow;
+    width: 150px;
+    height: 50px;
+}
