@@ -1,0 +1,126 @@
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-size: 14px;
+	font-family: 'Time New Roman',Arial;
+}
+
+li{
+	list-style: none;
+}
+a{
+	text-decoration: none;
+	color: #ffffff;
+	font-weight: bold;
+}
+
+
+header{
+	height: 110px;
+	width: 100%;
+	background-color: #221837;
+	display: flex;
+	justify-content: space-around;
+	padding: 0 15%;
+}
+
+header  ul  li{
+	display: inline-block;
+	padding:0 15px;
+	line-height: 110px;
+
+}
+header div{
+	margin-top: 35px;
+	height: 40px;
+	border: 1px solid #ffffff;
+	background-color: #ff007a;
+	border-radius: 7px;
+}
+header div a{
+	line-height: 40px;
+	padding: 0 15px;
+}
+
+content #TrangChu{
+	height: 800px;
+	width: 100%;
+	padding: 0 15%;
+	background-image: url(image/background.png);
+	background-size: 100%;
+	background-repeat: no-repeat;
+	position: relative;
+}
+content #TrangChu p{
+	font-size: 40px;
+    font-weight: bolder;
+    color: #ffffff;
+    position: absolute;
+    top: 34%;
+    left: 25%;
+}
+content #TrangChu p + p{
+	    font-size: 75px;
+    font-weight: bolder;
+    color: #ffffff;
+    position: absolute;
+    top: 44%;
+    left: 50%;
+}
+
+content #TrangChu a{
+	position: absolute;
+	top: 60%;
+	left: 35%;
+	height: 50px;
+	width: 145px;
+	line-height: 30px;
+	padding: 10px 15px;
+	background-color: #ff007a;
+	border: 1px solid #fff;
+	border-radius: 7px;
+}
+
+content #GioiThieu{
+	margin-top: 100px;
+	padding: 20px 15%;
+	display: flex;
+	justify-content: space-around;
+}
+content #GioiThieu h3{
+	font-size: 30px;font-weight: bolder;color: #3b1d82;
+				font-family:'Courier New';border-bottom: 1px solid
+
+}
+
+content #GioiThieu #left{
+	 width: 50%;
+	 margin-left: 10%;
+	 margin-top: 50px;
+	 position: relative;
+	
+}
+content #GioiThieu #left a{
+	margin-left: 160px;
+     margin-top: 55px; 
+    border: 1px solid #fff;
+    background-color: #ff007a;
+    padding: 15px 30px;
+    border-radius: 10px;
+    position: absolute;
+}
+
+content > #GioiThieu > div + div div{
+	    display: inline-block;
+    border: 1px solid #000000;
+    /* padding: 30px; */
+    height: 130px;
+    margin-bottom: 25px;
+    margin-left: 25px;
+    width: 290px;
+    border-radius: 15px;
+    /* text-align: center; */
+    padding: 20px;
+       box-shadow: 30px 20px #ccc;
+}
