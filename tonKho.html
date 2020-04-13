@@ -91,10 +91,15 @@
             <!-- Main ở đây -----------------------------------------------------------------------------------------------------------------------  -->
                 <main>
                     <div class="main-top">
-                        <h3>NHẬP HÀNG TỪ NHÀ CUNG CẤP</h3>
+                        <h3>KHO SẢN PHẨM</h3>
                         <div class="btn-right">
                             <button type="button" class="btn btn-primary">Xuất ra excel file</button>
-                            <button type="button" class="btn btn-success">Thêm mới phiếu trả</button>
+                            <select class="custom-select" id="inputGroupSelect01">
+                                <option selected>Kho</option>
+                                <option value="1">1</option>
+                                <option value="2">2</option>
+                                <option value="3">3</option>
+                            </select>
                         </div>
                     </div>
                     <div class="main-middle-search">
@@ -124,12 +129,12 @@
                             <thead class="thead-dark">     
                               <tr>
                                 <th scope="col">#</th>
-                                <th scope="col">Thao tác</th>
-                                <th scope="col">Mã phiếu</th>
-                                <th scope="col">Nhà cung cấp</th>
-                                <th scope="col">Nhân viên</th>
-                                <th scope="col">Ngày nhập</th>
-                                <th scope="col">Tổng tiền</th>
+                                <th scope="col">Mã sản phẩm</th>
+                                <th scope="col">Tên sản phẩm</th>
+                                <th scope="col">Loại sản phẩm</th>
+                                <th scope="col">Mô tả</th>
+                                <th scope="col">Số lượng tồn</th>
+                                <th scope="col">Giá bán</th>
                               </tr>
                             </thead>
                             <tbody>
@@ -160,10 +165,29 @@
                                 <td>data</td>
                                 <td>data</td>
                               </tr>
+                              <tr>
+                                <th scope="row">4</th>
+                                <td>data</td>
+                                <td>data</td>
+                                <td>data</td>
+                                <td>data</td>
+                                <td>data</td>
+                                <td>data</td>
+                              </tr>
+                              <tr>
+                                <th scope="row">5</th>
+                                <td>data</td>
+                                <td>data</td>
+                                <td>data</td>
+                                <td>data</td>
+                                <td>data</td>
+                                <td>data</td>
+                              </tr>
                             </tbody>
                           </table>
 
                           <div class="btn-bottom">
+                            <button type="button" class="btn btn-success">Nhập tồn</button>
                             <button type="button" class="btn btn-info">Chi Tiết</button>
                             <button type="button" class="btn btn-info">Sửa</button>
                             <button type="button" class="btn btn-danger">Xóa</button>
