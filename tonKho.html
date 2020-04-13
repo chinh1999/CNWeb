@@ -91,10 +91,15 @@
             <!-- Main ở đây -----------------------------------------------------------------------------------------------------------------------  -->
                 <main>
                     <div class="main-top">
-                        <h3>NHẬP HÀNG TỪ NHÀ CUNG CẤP</h3>
+                        <h3>KHO SẢN PHẨM</h3>
                         <div class="btn-right">
                             <button type="button" class="btn btn-primary">Xuất ra excel file</button>
-                            <button type="button" class="btn btn-success">Thêm mới phiếu trả</button>
+                            <select class="custom-select" id="inputGroupSelect01">
+                                <option selected>Kho</option>
+                                <option value="1">1</option>
+                                <option value="2">2</option>
+                                <option value="3">3</option>
+                            </select>
                         </div>
                     </div>
                     <div class="main-middle-search">
@@ -164,6 +169,7 @@
                           </table>
 
                           <div class="btn-bottom">
+                            <button type="button" class="btn btn-success">Nhập tồn</button>
                             <button type="button" class="btn btn-info">Chi Tiết</button>
                             <button type="button" class="btn btn-info">Sửa</button>
                             <button type="button" class="btn btn-danger">Xóa</button>

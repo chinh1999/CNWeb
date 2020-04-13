@@ -131,8 +131,12 @@ main .main-bot-table .btn-bottom {
 }
 
 main .main-bot-table .btn-bottom .btn{
-  width: 30%;
+  width: 20%;
   margin: 30px 0;
+}
+
+main .main-top .btn-right .custom-select{
+  width: 100px;
 }
 
 
