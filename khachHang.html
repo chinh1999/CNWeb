@@ -6,7 +6,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
         <meta name="description" content="" />
         <meta name="author" content="" />
-        <title>Admin Page</title>
+        <title>Khách hàng</title>
         <link href="stylesadmin.css" rel="stylesheet" />
         <link href="https://cdn.datatables.net/1.10.20/css/dataTables.bootstrap4.min.css" rel="stylesheet" crossorigin="anonymous" />
         <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/js/all.min.js" crossorigin="anonymous"></script>
@@ -90,7 +90,87 @@
             <div id="layoutSidenav_content">
             <!-- Main ở đây -----------------------------------------------------------------------------------------------------------------------  -->
                 <main>
-                    Nội dung ở đây
+                    <div class="main-top">
+                        <h3>KHÁCH HÀNG</h3>
+                        <div class="btn-right">
+                            <button type="button" class="btn btn-primary">Xuất ra excel file</button>
+                        </div>
+                    </div>
+                    <div class="main-middle-search">
+                        <div class="box-search" id="boxsearch-kho">
+                            <div class="input-group">
+                                <input type="text" class="form-control" placeholder="Mã khách hàng, tên khách hàng ....">
+                                <div class="input-group-append">
+                                    <button class="btn btn-secondary" type="button">
+                                        <i class="fa fa-search"></i>
+                                    </button>
+                                </div>
+                            </div>    
+                        </div>
+                    </div>
+                    <div class="main-bot-table">
+                        <table class="table">
+                            <thead class="thead-dark">     
+                              <tr>
+                                <th scope="col">#</th>
+                                <th scope="col">Mã khách hàng</th>
+                                <th scope="col">Tên khách hàng</th>
+                                <th scope="col">Giới tính</th>
+                                <th scope="col">Địa chỉ</th>
+                                <th scope="col">Số điện thoại</th>
+                              </tr>
+                            </thead>
+                            <tbody>
+                              <tr>
+                                <th scope="row">1</th>
+                                <td>data</td>
+                                <td>data</td>
+                                <td>data</td>
+                                <td>data</td>
+                                <td>data</td>
+                              </tr>
+                              <tr>
+                                <th scope="row">2</th>
+                                <td>data</td>
+                                <td>data</td>
+                                <td>data</td>
+                                <td>data</td>
+                                <td>data</td>
+                              </tr>
+                              <tr>
+                                <th scope="row">3</th>
+                                <td>data</td>
+                                <td>data</td>
+                                <td>data</td>
+                                <td>data</td>
+                                <td>data</td>
+                              </tr>
+                              <tr>
+                                <th scope="row">4</th>
+                                <td>data</td>
+                                <td>data</td>
+                                <td>data</td>
+                                <td>data</td>
+                                <td>data</td>
+                              </tr>
+                              <tr>
+                                <th scope="row">5</th>
+                                <td>data</td>
+                                <td>data</td>
+                                <td>data</td>
+                                <td>data</td>
+                                <td>data</td>
+                              </tr>
+                            </tbody>
+                          </table>
+
+                          <div class="btn-bottom">
+                            <button type="button" class="btn btn-success">Thêm mới khách hàng</button>
+                            <button type="button" class="btn btn-info">Chi Tiết</button>
+                            <button type="button" class="btn btn-info">Sửa</button>
+                            <button type="button" class="btn btn-danger">Xóa</button>
+                          </div>
+                    </div>
                 </main>
                 <!-- Kết thúc main ở đây -----------------------------------------------------------------------------------------------------------------------  -->
                 <footer class="py-4 bg-light mt-auto">
