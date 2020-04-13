@@ -7,6 +7,18 @@ a {
   color: #00B7FF;
 }
 
+/* CSS tổng quan */
+#main-tq {
+  display: flex;
+  justify-content: space-between;
+}
+#main-tq .div-con {
+  height: 100px;
+  width: 20%;
+  background-color: pink;
+  text-align: center;
+}
+
 /* CSS form main */
 main .main-top{
   height: 50px;
