@@ -25,7 +25,9 @@ header{
 	justify-content: space-around;
 	padding: 0 15%;
 }
-
+header ul li a:hover{
+	color: #ff007a;
+}
 header  ul  li{
 	display: inline-block;
 	padding:0 15px;
@@ -35,13 +37,17 @@ header  ul  li{
 header div{
 	margin-top: 35px;
 	height: 40px;
-	border: 1px solid #ffffff;
-	background-color: #ff007a;
-	border-radius: 7px;
 }
 header div a{
 	line-height: 40px;
-	padding: 0 15px;
+    padding: 10px 15px;
+    border: 1px solid;
+    background-color: #ff007a;
+    border-radius: 10px;
+}
+header div  a:hover {
+	background-color: #fff;
+	color: #ff007a;
 }
 
 content #TrangChu{
@@ -82,7 +88,11 @@ content #TrangChu a{
 	border: 1px solid #fff;
 	border-radius: 7px;
 }
-
+content #TrangChu a:hover{
+	background-color: #fff;
+	border:1px solid #ff007a;
+	color: #ff007a;
+}
 content #GioiThieu{
 	margin-top: 100px;
 	padding: 20px 15%;
@@ -91,7 +101,9 @@ content #GioiThieu{
 }
 content #GioiThieu h3{
 	font-size: 30px;font-weight: bolder;color: #3b1d82;
-				font-family:'Courier New';border-bottom: 1px solid
+				font-family:'Courier New';border-bottom: 1px solid;
+				padding-bottom: 5px;
+
 
 }
 
@@ -111,7 +123,11 @@ content #GioiThieu #left a{
     border-radius: 10px;
     position: absolute;
 }
-
+content #GioiThieu #left a:hover{
+	border:1px solid #ff007a;
+	background-color: #fff;
+	color: #ff007a;
+}
 content > #GioiThieu > div + div div{
 	    display: inline-block;
     border: 1px solid #000000;
@@ -123,7 +139,7 @@ content > #GioiThieu > div + div div{
     border-radius: 15px;
     /* text-align: center; */
     padding: 20px;
-       box-shadow: 30px 20px #ccc;
+       box-shadow: 0 15px 25px rgba(136, 127, 127, 0.9);
 }
 
 /*style contact and footer */
@@ -155,11 +171,20 @@ content .contact .form-group #message{
 }
 
 content .contact .form-group .btn{
-	margin: 0 20px;
-	background-color: #1abc9c;
-	border: 1px solid #1abc9c;
+	    margin: 0 20px;
+    background-color: #ff007a;
+    border: 1px solid #fff;
+    padding: 5px 10px;
+    border: 1px solid;
+    border-radius: 5px;
+    color: #fff;
+    margin-bottom: 15px;
 }
-
+content .contact .form-group .btn:hover{
+	background-color: #fff;
+	color: #ff007a;
+	border:1px solid #ff007a;
+}
 .footer{
 	width: 100%;
 	height: 240px;
@@ -196,3 +221,200 @@ footer .footer-top .footer-content .content-box{
 	padding-top: 10px;
 	margin: 0;
 } 
+
+@media only screen and (max-width: 1483px){
+       
+    content #GioiThieu #left a{
+    margin-left: 77px;
+    margin-top: 55px;
+    border: 1px solid #fff;
+    background-color: #ff007a;
+    padding: 15px 30px;
+    border-radius: 10px;
+    position: absolute;
+    }
+
+
+}
+
+@media only screen and (max-width: 1710px){
+	content #GioiThieu #left {
+    width: 60%;
+    margin-left: 0;
+    margin-top: 23px;
+    position: relative;
+	}
+	
+	content #TrangChu p + p {
+    font-size: 75px;
+    font-weight: bolder;
+    color: #ffffff;
+    position: absolute;
+    top: 44%;
+    left: 45%;
+	}
+}
+@media only screen and (max-width: 1291px){
+	content #GioiThieu{
+		margin-top: 0;
+		display: block;
+		display: flex;
+		justify-content: space-between;
+	}
+	content #TrangChu p + p {
+    font-size: 75px;
+    font-weight: bolder;
+    color: #ffffff;
+    position: absolute;
+    top: 44%;
+    left: 35%;
+	}
+	content #GioiThieu #left {
+    width: 60%;
+    position: relative;
+    margin-bottom: 50px;
+	}
+	content #GioiThieu #left h3 {
+    font-size: 30px;
+    font-weight: bolder;
+    color: #3b1d82;
+    font-family: 'Courier New';
+    padding-bottom: 5px;
+	}
+	content > #GioiThieu > div + div div {
+    display: inline-block;
+    border: 1px solid #000000;
+    /* padding: 30px; */
+    height: 130px;
+    margin-bottom: 25px;
+    margin-left: 10px;
+    width: 290px;
+    border-radius: 15px;
+    /* text-align: center; */
+    padding: 20px;
+    box-shadow: 0 15px 25px rgba(136, 127, 127, 0.9);
+}
+}
+@media only screen and (max-width: 1245px){
+	
+	content #GioiThieu #left {
+		width: 150%;
+		margin: 0 auto;
+	}
+	content #TrangChu p {
+    font-size: 40px;
+    font-weight: bolder;
+    color: #ffffff;
+    position: absolute;
+    top: 34%;
+    left: 22%;
+}
+content #TrangChu p + p {
+    font-size: 75px;
+    font-weight: bolder;
+    color: #ffffff;
+    position: absolute;
+    top: 44%;
+    left: 30%;
+}
+content #TrangChu a {
+    position: absolute;
+    top: 60%;
+    left: 44%;
+    height: 50px;
+    width: 145px;
+    line-height: 30px;
+    padding: 10px 15px;
+    background-color: #ff007a;
+    border: 1px solid #fff;
+    border-radius: 7px;
+}
+content #TrangChu {
+    height: 730px;
+    width: 100%;
+    padding: 0 15%;
+    background-image: url(image/background.png);
+    background-size: 100%;
+    background-repeat: no-repeat;
+    position: relative;
+}
+content #GioiThieu #left h3 {
+    font-size: 30px;
+    font-weight: bolder;
+    color: #3b1d82;
+    font-family: 'Courier New';
+    padding-bottom: 5px;
+    width: 77%;
+}
+}
+
+@media only screen and (max-width: 1050px){
+	
+	content #TrangChu {
+    height: 655px;
+    width: 100%;
+    padding: 0 15%;
+    background-image: url(image/background.png);
+    background-size: 100%;
+    background-repeat: no-repeat;
+    position: relative;
+	}
+	content #GioiThieu {
+    margin-top: 0;
+    display: block;
+	}
+	content #GioiThieu #left {
+    margin: 0 auto;
+	}
+	content #GioiThieu #left h3 {
+    font-size: 30px;
+    font-weight: bolder;
+    color: #3b1d82;
+    font-family: 'Courier New';
+    padding-bottom: 5px;
+    /* width: 77%; */
+    /* margin-left: 69px; */
+    padding-left: 150px;
+    width: 50%;
+    margin-left: 115px;
+}
+	content #GioiThieu #left p{
+		margin-left: 215px;
+	}
+	content #GioiThieu #left a {
+    margin-left: 320px;
+    margin-top: 25px;
+    border: 1px solid #fff;
+    background-color: #ff007a;
+    padding: 15px 30px;
+    border-radius: 10px;
+    position: absolute;
+}
+	content #GioiThieu #right{
+		margin-top: 100px;
+    margin-left: 80px;
+	}
+	content #TrangChu p {
+    font-size: 35px;
+    font-weight: bolder;
+    color: #ffffff;
+    position: absolute;
+    top: 34%;
+    left: 22%;
+}
+	content #TrangChu p + p {
+    font-size: 65px;
+    font-weight: bolder;
+    color: #ffffff;
+    position: absolute;
+    top: 44%;
+    left: 30%;
+}
+}
+
+@media only screen and (max-width: 976px){
+	content #GioiThieu #right {
+    margin-top: 100px;
+    padding-left: 20%;
+}
+}
