@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+        <meta name="description" content="" />
+        <meta name="author" content="" />
+        <title>Bán hàng</title>
+        <link href="stylesadmin.css" rel="stylesheet" />
+        <link href="https://cdn.datatables.net/1.10.20/css/dataTables.bootstrap4.min.css" rel="stylesheet" crossorigin="anonymous" />
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/js/all.min.js" crossorigin="anonymous"></script>
+        <link rel="stylesheet" href="styleadmin.css">
+    </head>
+    <body class="sb-nav-fixed">
+        <nav class="sb-topnav navbar navbar-expand navbar-dark bg-dark">
+            <a class="navbar-brand" href="adminPage.html">Admin</a><button class="btn btn-link btn-sm order-1 order-lg-0" id="sidebarToggle" href="#"><i class="fas fa-bars"></i></button
+            ><!-- Navbar-->
+            <ul class="navbar-nav ml-auto ml-md-0" style="padding-left: 1600px;">
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" id="userDropdown" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><i class="fas fa-user fa-fw"></i></a>
+                    <div class="dropdown-menu dropdown-menu-right" aria-labelledby="userDropdown">
+                        <a class="dropdown-item" href="#">Settings</a><a class="dropdown-item" href="#">Activity Log</a>
+                        <div class="dropdown-divider"></div>
+                        <a class="dropdown-item" href="#">Logout</a>
+                    </div>
+                </li>
+            </ul>
+        </nav>
+        <div id="layoutSidenav">
+            <div id="layoutSidenav_nav">
+                <nav class="sb-sidenav accordion sb-sidenav-dark" id="sidenavAccordion">
+                    <div class="sb-sidenav-menu">
+                        <div class="nav">
+                            <div class="sb-sidenav-menu-heading">Menu</div>
+                            <a class="nav-link" href="#"
+                                ><div class="sb-nav-link-icon"><i class="fas fa-tachometer-alt"></i></div>
+                                Bán hàng</a>
+                            <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapseLayouts" aria-expanded="false" aria-controls="collapseLayouts"
+                                ><div class="sb-nav-link-icon"><i class="fas fa-columns"></i></div>
+                                Quản lý kho
+                                <div class="sb-sidenav-collapse-arrow"><i class="fas fa-angle-down"></i></div>
+                            </a>
+                            <!-- link dẫn quản lý kho -->
+                            <div class="collapse" id="collapseLayouts" aria-labelledby="headingOne" data-parent="#sidenavAccordion">
+                                <nav class="sb-sidenav-menu-nested nav"> 
+                                    <a class="nav-link" href="#">Nhập hàng từ NCC</a>
+                                    <a class="nav-link" href="#">Xuất trả NCC</a>
+                                    <a class="nav-link" href="#">Nhập lại</a>
+                                    <a class="nav-link" href="#">Tồn kho</a>
+                                </nav>
+                            </div>
+                            <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapsePages" aria-expanded="false" aria-controls="collapsePages"
+                                ><div class="sb-nav-link-icon"><i class="fa fa-handshake"></i></div>
+                                Đối tác
+                                <div class="sb-sidenav-collapse-arrow"><i class="fas fa-angle-down"></i></div>
+                            </a>
+                            <!-- link dẫn đến quản lý khách hàng, nhà cung cấp -->
+                            <div class="collapse" id="collapsePages" aria-labelledby="headingTwo" data-parent="#sidenavAccordion">
+                                <nav class="sb-sidenav-menu-nested nav accordion" id="sidenavAccordionPages">
+                                    <a class="nav-link" href="#">Nhà cung cấp</a>
+                                    <a class="nav-link" href="#">Khách hàng</a>  
+                                </nav>
+                            </div>
+
+                            
+
+                            <a class="nav-link" href="#">
+                                <div class="sb-nav-link-icon"><i class="fa fa-sticky-note"></i></div>
+                                Quản lý hóa đơn
+                            </a>
+                            <a class="nav-link" href="#">
+                                <div class="sb-nav-link-icon"><i class="fa fa-book"></i></div>
+                                Hướng dẫn sử dụng
+                            </a>
+                            <a class="nav-link" href="#">
+                                <div class="sb-nav-link-icon"><i class="fa fa-phone"></i></div>
+                                Liên hệ chúng tôi
+                            </a>
+                            <a class="nav-link" href="#">
+                                <div class="sb-nav-link-icon"><i class="fas fa-table"></i></div>
+                                Hỗ trợ trực tuyến
+                            </a>
+                        </div>
+                    </div> 
+                </nav>
+            </div>
+   
+            <!-- Kết thúc nav-->
+            <div id="layoutSidenav_content">
+            <!-- Main ở đây -----------------------------------------------------------------------------------------------------------------------  -->
+                <main>
+                    <div class="main-top">
+                        <h3>BÁN HÀNG</h3>
+                    </div>
+                    <div class="main-middle">
+                        <div class="middle-left">
+                            <p>Sản phẩm</p>
+                            <!--Thanh search hang hoa-->
+                            <div class="input-group">
+                                <input type="text" class="form-control" placeholder="Tìm kiếm hàng hóa theo tên, mã hàng hóa...">
+                                <div class="input-group-append">
+                                    <button class="btn btn-secondary" type="button">
+                                        <i class="fa fa-search"></i>
+                                    </button>
+                                </div>
+                            </div>
+                            <!--Ket thuc thanh search hang hoa-->
+                            <!--Table chua danh sach hang hoa ban-->
+                            <table class="table">
+                                <thead>
+                                  <tr>
+                                    <th scope="col">#</th>
+                                    <th scope="col">Mã sản phẩm</th>
+                                    <th scope="col">Tên sản phẩm</th>
+                                    <th scope="col">Loại sản phẩm</th>
+                                    <th scope="col">Mô tả</th>
+                                    <th scope="col">Số lượng tồn</th>
+                                    <th scope="col">Số lượng bán</th>
+                                    <th scope="col">Giá bán</th>
+                                    <th scope="col">Thành tiền</th>
+                                  </tr>
+                                </thead>
+                                <tbody>
+                                  <tr>
+                                    <th scope="row">1</th>
+                                    <td>a</td>
+                                    <td>a</td>
+                                    <td>a</td>
+                                    <td>a</td>
+                                    <td>a</td>
+                                    <td>a</td>
+                                    <td>a</td>
+                                    <td>a</td>
+                                  </tr>
+                                  <tr>
+                                    <th scope="row">2</th>
+                                    <td>b</td>
+                                    <td>b</td>
+                                    <td>b</td>
+                                    <td>b</td>
+                                    <td>b</td>
+                                    <td>b</td>
+                                    <td>b</td>
+                                    <td>b</td>  
+                                  </tr>
+                                  <tr>
+                                    <th scope="row">3</th>
+                                    <td>c</td>  
+                                    <td>c</td>
+                                    <td>c</td>
+                                    <td>c</td>
+                                    <td>c</td>
+                                    <td>c</td>
+                                    <td>c</td>
+                                    <td>c</td>
+                                  </tr>
+                                  <tr>
+                                    <th scope="row">3</th>
+                                    <td>c</td>  
+                                    <td>c</td>
+                                    <td>c</td>
+                                    <td>c</td>
+                                    <td>c</td>
+                                    <td>c</td>
+                                    <td>c</td>
+                                    <td>c</td>
+                                  </tr>
+                                  <tr>
+                                    <th scope="row">3</th>
+                                    <td>c</td>  
+                                    <td>c</td>
+                                    <td>c</td>
+                                    <td>c</td>
+                                    <td>c</td>
+                                    <td>c</td>
+                                    <td>c</td>
+                                    <td>c</td>
+                                  </tr>
+                                  <tr>
+                                    <th scope="row">3</th>
+                                    <td>c</td>  
+                                    <td>c</td>
+                                    <td>c</td>
+                                    <td>c</td>
+                                    <td>c</td>
+                                    <td>c</td>
+                                    <td>c</td>
+                                    <td>c</td>
+                                  </tr>
+                                  <tr>
+                                    <th scope="row">3</th>
+                                    <td>c</td>  
+                                    <td>c</td>
+                                    <td>c</td>
+                                    <td>c</td>
+                                    <td>c</td>
+                                    <td>c</td>
+                                    <td>c</td>
+                                    <td>c</td>
+                                  </tr>
+                                  <tr>
+                                    <th scope="row">3</th>
+                                    <td>c</td>  
+                                    <td>c</td>
+                                    <td>c</td>
+                                    <td>c</td>
+                                    <td>c</td>
+                                    <td>c</td>
+                                    <td>c</td>
+                                    <td>c</td>
+                                  </tr>
+                                </tbody>
+                            </table>
+                            <!--Ket thuc table chua danh sach hang hoa ban-->
+                        </div>
+                        <div class="middle-right">
+                            <p>Hóa đơn</p>
+                            <div class="form-group">
+                                <label for="usr">Mã hóa đơn</label>
+                                <input type="text" class="form-control" disabled>
+                            </div>
+                            <div class="form-group">
+                                <label for="usr">Người bán</label>
+                                <input type="text" class="form-control" disabled>
+                            </div>
+                            <div class="form-group">
+                                <label for="usr">Ngày bán</label>
+                                <input class="form-control" type="datetime-local" value="2011-08-19T13:45:00">
+                            </div>
+                            <div class="form-group">
+                                <label for="usr">Khách hàng</label>
+                                <div class="input-group">
+                                    <input type="text" class="form-control" placeholder="Tên, mã khách hàng...">
+                                    <div class="input-group-append">
+                                        <button class="btn btn-secondary" type="button">
+                                            <i class="fa fa-search"></i>
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="sumMoney">
+                                <span>TỔNG TIỀN</span>
+                                <span>0</span>
+                            </div>
+                            <button type="button" class="btn btn-primary" id="btnTT">Thanh toán</button>
+                            <button type="button" class="btn btn-success" id="btnTTHD">Thanh toán và in hóa đơn</button>
+                            <button type="button" class="btn btn-danger" id="btnHuy">Hủy</button>
+                        </div>
+                        
+                        
+                    </div>
+                </main>
+                <!-- Kết thúc main ở đây -----------------------------------------------------------------------------------------------------------------------  -->
+                <footer class="py-4 bg-light mt-auto">
+                    <div class="container-fluid">
+                        <div class="d-flex align-items-center justify-content-between small">
+                            <div class="text-muted">Copyright &copy; Học viện kỹ thuật quân sự - MTA</div>
+                            <div>
+                                Template Công nghệ web
+                            </div>
+                        </div>
+                    </div>
+                </footer>
+            </div>    
+        </div>
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.bundle.min.js" crossorigin="anonymous"></script>
+    <script src="scripts.js"></script>
+  
+</body>
+</html>

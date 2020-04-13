@@ -1,0 +1,86 @@
+body {
+  padding: 50px;
+  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+}
+
+a {
+  color: #00B7FF;
+}
+
+/* CSS form main */
+main .main-top{
+  height: 50px;
+  width: 100%;
+  border-bottom: 0.5px solid #c7bcbc;
+  margin-bottom: 10px;
+}
+
+main .main-top h3{
+  Color: black;
+  line-height: 50px;
+  font-size: 30px;
+  margin-left: 30px;
+}
+
+main .main-middle {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+
+main .main-middle .middle-left {
+  width: 70%;
+  padding: 0 1% 15px 1%;
+  border-left: 0.5px solid #f5f5f5;
+  border-right: 0.5px solid #f5f5f5;
+  border-bottom: 0.5px solid #f5f5f5;
+}
+
+main .main-middle .middle-left p{
+  margin-left: 2%;
+  margin-top: 20px;
+  font-size: 20px;
+}
+
+main .main-middle .middle-left .input-group{
+  width: 96%;
+  margin: 20px auto;
+}
+
+main .main-middle .middle-right{
+  width: 28%;
+  padding: 0 1% 15px 1%;
+  border-left: 0.5px solid #f5f5f5;
+  border-bottom: 0.5px solid #f5f5f5;
+  border-right: 0.5px solid #f5f5f5;
+}
+
+main .main-middle .middle-right p{
+  margin-left: 2%;
+  margin-top: 20px;
+  font-size: 20px;
+}
+
+main .main-middle .middle-right .form-group label{
+  font-size: 16px;
+  margin: 15px 0 10px 10px;
+  color: gray;
+}
+
+main .main-middle .middle-right .sumMoney{
+  display: flex;
+  justify-content: space-between;
+  padding: 20px 10px 20px 10px;
+  color: gray;
+  border: 0.5px solid #c7bcbc;
+  font-size: 20px;  
+}
+
+main .main-middle .middle-right #btnTT,
+main .main-middle .middle-right #btnTTHD,
+main .main-middle .middle-right #btnHuy{
+  width: 100%;
+  margin-top: 20px;
+}
+
+
