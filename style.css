@@ -127,6 +127,7 @@ content > #GioiThieu > div + div div{
 }
 
 /*style contact and footer */
+
 content .contact{
 	width: 20%;
 	background-color: #ffffff;
@@ -194,4 +195,4 @@ footer .footer-top .footer-content .content-box{
 	color: #ffffff;
 	padding-top: 10px;
 	margin: 0;
-}
+} 
