@@ -13,6 +13,8 @@ main .main-top{
   width: 100%;
   border-bottom: 0.5px solid #c7bcbc;
   margin-bottom: 10px;
+  display: flex;
+  justify-content: space-between;
 }
 
 main .main-top h3{
@@ -83,6 +85,55 @@ main .main-middle .middle-right #btnHuy{
   margin-top: 20px;
 }
 
+/* css NhapHangPage */
+main .main-top .btn-right .btn{
+  margin-right: 15px;
+}
+
+main .main-bot-table {
+  padding: 0 10px 0 10px;
+  border-left: 0.5px solid #f5f5f5;
+  border-right: 0.5px solid #f5f5f5;
+}
+
+main .main-middle-search{
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+
+main .main-middle-search .time-search{
+  width: 38%;
+  display: flex;
+  justify-content: space-between;
+  margin: 30px 1%;
+}
+
+main .main-middle-search .time-search span{
+  font-size: 20px;
+  margin-bottom: 5px;
+}
+
+main .main-middle-search .time-search .form-control{
+  margin-top: 5px;
+}
+
+main .main-middle-search .box-search{
+  width: 60%;
+  margin: 58px 1% 0 1%;
+}
+
+main .main-bot-table .btn-bottom {
+  width: 50%;
+  display: flex;
+  justify-content: space-between;
+  margin-left: 48%;
+}
+
+main .main-bot-table .btn-bottom .btn{
+  width: 30%;
+  margin: 30px 0;
+}
 
 
 

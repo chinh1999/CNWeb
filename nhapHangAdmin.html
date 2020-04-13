@@ -22,7 +22,7 @@
                     <div class="dropdown-menu dropdown-menu-right" aria-labelledby="userDropdown">
                         <a class="dropdown-item" href="#">Settings</a><a class="dropdown-item" href="#">Activity Log</a>
                         <div class="dropdown-divider"></div>
-                        <a class="dropdown-item" href="#">Logout</a>
+                        <a class="dropdown-item" href="login.html">Logout</a>
                     </div>
                 </li>
             </ul>
@@ -44,9 +44,9 @@
                             <!-- link dẫn quản lý kho -->
                             <div class="collapse" id="collapseLayouts" aria-labelledby="headingOne" data-parent="#sidenavAccordion">
                                 <nav class="sb-sidenav-menu-nested nav"> 
-                                    <a class="nav-link" href="#">Nhập hàng từ NCC</a>
+                                    <a class="nav-link" href="nhapHangAdmin.html">Nhập hàng từ NCC</a>
                                     <a class="nav-link" href="traHangNCCAdmin.html">Xuất trả NCC</a>
-                                    <a class="nav-link" href="#">Nhập lại</a>
+                                    <a class="nav-link" href="nhapLaiKH.html">Nhập lại</a>
                                     <a class="nav-link" href="#">Tồn kho</a>
                                 </nav>
                             </div>
@@ -92,9 +92,83 @@
                 <main>
                     <div class="main-top">
                         <h3>NHẬP HÀNG TỪ NHÀ CUNG CẤP</h3>
+                        <div class="btn-right">
+                            <button type="button" class="btn btn-primary">Xuất ra excel file</button>
+                            <button type="button" class="btn btn-success">Thêm mới phiếu trả</button>
+                        </div>
                     </div>
-                    <div class="main-middle"></div>
-                    <div class="main-bot"></div>
+                    <div class="main-middle-search">
+                        <div class="time-search">
+                            <div class="time-search-left">
+                                <span>Từ ngày</span>
+                                <input class="form-control" type="datetime-local" value="2011-08-19T13:45:00">
+                            </div>
+                            <div class="time-search-right">
+                                <span>Tới ngày</span>
+                                <input class="form-control" type="datetime-local" value="2011-08-19T13:45:00">
+                            </div>
+                        </div>
+                        <div class="box-search">
+                            <div class="input-group">
+                                <input type="text" class="form-control" placeholder="Mã phiếu, nhà cung cấp,....">
+                                <div class="input-group-append">
+                                    <button class="btn btn-secondary" type="button">
+                                        <i class="fa fa-search"></i>
+                                    </button>
+                                </div>
+                            </div>    
+                        </div>
+                    </div>
+                    <div class="main-bot-table">
+                        <table class="table">
+                            <thead class="thead-dark">     
+                              <tr>
+                                <th scope="col">#</th>
+                                <th scope="col">Thao tác</th>
+                                <th scope="col">Mã phiếu</th>
+                                <th scope="col">Nhà cung cấp</th>
+                                <th scope="col">Nhân viên</th>
+                                <th scope="col">Ngày nhập</th>
+                                <th scope="col">Tổng tiền</th>
+                              </tr>
+                            </thead>
+                            <tbody>
+                              <tr>
+                                <th scope="row">1</th>
+                                <td>data</td>
+                                <td>data</td>
+                                <td>data</td>
+                                <td>data</td>
+                                <td>data</td>
+                                <td>data</td>
+                              </tr>
+                              <tr>
+                                <th scope="row">2</th>
+                                <td>data</td>
+                                <td>data</td>
+                                <td>data</td>
+                                <td>data</td>
+                                <td>data</td>
+                                <td>data</td>
+                              </tr>
+                              <tr>
+                                <th scope="row">3</th>
+                                <td>data</td>
+                                <td>data</td>
+                                <td>data</td>
+                                <td>data</td>
+                                <td>data</td>
+                                <td>data</td>
+                              </tr>
+                            </tbody>
+                          </table>
+
+                          <div class="btn-bottom">
+                            <button type="button" class="btn btn-info">Chi Tiết</button>
+                            <button type="button" class="btn btn-info">Sửa</button>
+                            <button type="button" class="btn btn-danger">Xóa</button>
+                          </div>
+                    </div>
                 </main>
                 <!-- Kết thúc main ở đây -----------------------------------------------------------------------------------------------------------------------  -->
                 <footer class="py-4 bg-light mt-auto">
